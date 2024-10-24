@@ -19,6 +19,13 @@
             font-size: 0.8em; /* Slightly smaller font size */
             margin-top: 10px; /* Space above the copyright */
         }
+        .research-focus {
+            margin-top: 20px; /* Space above the research focus section */
+        }
+        .portfolio-item {
+            max-width: 100%; /* Ensure images are responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
     </style>
 </head>
 
@@ -57,12 +64,12 @@
     </div>
 
     <div class="row">
-        <div class="col-md-7"> <!-- Increased column width from 4 to 7 -->
+        <div class="col-md-6"> <!-- Adjusted column width -->
             <!-- Direct link to your Dropbox image with inline styles -->
-            <img class="img-responsive" style="max-width: 100%; max-height: 120px; height: auto;" src="https://www.dropbox.com/scl/fi/sf4bsxevz9looewc6gnzg/My-photo.jpg?rlkey=eypr1f445l2rhqcis502jjpzi&st=5ikotci6&raw=1" alt="Image of Pierre Guy A.Njock">
+            <img class="img-responsive" style="max-width: 100%; max-height: 250px; height: auto;" src="https://www.dropbox.com/scl/fi/sf4bsxevz9looewc6gnzg/My-photo.jpg?rlkey=eypr1f445l2rhqcis502jjpzi&st=5ikotci6&raw=1" alt="Image of Pierre Guy A.Njock">
         </div> 
 
-        <div class="col-md-7"> <!-- Increased column width from 4 to 5 -->
+        <div class="col-md-6"> <!-- Adjusted column width -->
             <h2><small>Research Fellow</small></h2>
             <p>Department of Civil & Environmental Engineering</p>
             <p>The Hong Kong Polytechnic University</p>
@@ -71,6 +78,42 @@
             <p>I design, develop, and evaluate intelligent models that enhance data interpretation and predictive capabilities in challenging geotechnical scenarios. These models augment the accuracy and reliability of infrastructure design and construction, bringing transformative value to industry.</p>
         </div>
     </div>
+
+    <!-- New Research Focus Section -->
+    <div class="research-focus">
+        <h3 style="margin-top: 20px;">Research Focus</h3>
+        <p style="font-style: italic;">
+            - AI &nbsp; | &nbsp; 
+            - Geotechnical Engineering &nbsp; | &nbsp; 
+            - Water Resources &nbsp; | &nbsp; 
+            - Smart Cities
+        </p>
+
+        <!-- Related Projects Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="page-header">Related Projects</h3>
+            </div>
+
+            <!-- Four picture placeholders -->
+            <div class="col-sm-3 col-xs-6">
+                <a href="#"><img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt=""></a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#"><img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt=""></a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#"><img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt=""></a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#"><img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt=""></a>
+            </div>
+        </div><!-- /.row -->
+        
+    </div><!-- /.research-focus -->
 
     <!-- Updated Latest News Section -->
     <div class="news-box">
@@ -82,7 +125,6 @@
             <li><strong>Dec 2023:</strong> Became a Member of the Hong Kong Geotechnical Society (HKGES).</li>
         </ul>
     </div>
-
 </div><!-- /.container -->
 
 <div class="container">
@@ -107,8 +149,8 @@
 </div><!-- /.container -->
 
 <!-- JavaScript -->
-<script src="js/jquery-1.10.2.js"></script>
-<script src="js/bootstrap.js"></script>
+<script src="//code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery CDN link -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> <!-- Bootstrap JS CDN link -->
 
 </body>
 
