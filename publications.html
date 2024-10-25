@@ -18,26 +18,19 @@
         }
         .publication {
             margin-bottom: 20px; /* Space between publications */
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center items vertically */
         }
         .publication img {
             max-width: 100px; /* Set a fixed width for images */
             height: auto; /* Maintain aspect ratio */
+            margin-right: 15px; /* Space between image and text */
         }
         body {
             padding-top: 70px; /* Adjust padding to avoid overlap with fixed navbar */
         }
-        table {
-            width: 100%; /* Full width for the table */
-            margin-bottom: 40px; /* Space below the table */
-            border-collapse: collapse; /* Collapse borders to remove spacing */
-        }
-        th, td {
-            padding: 10px; /* Padding for table cells */
-            text-align: left; /* Align text to the left */
-            border: none; /* Remove borders */
-        }
-        th {
-            background-color: #f8f9fa; /* Light background for headers */
+        h4 {
+            margin-top: 30px; /* Space above section headers */
         }
     </style>
 </head>
@@ -79,137 +72,99 @@
 
     <h4>Peer-reviewed Papers (Selected)</h4>
 
-    <!-- Publications Table -->
-    <table>
-        <thead>
-            <tr>
-                <th>Year</th>
-                <th>Image</th>
-                <th>Publication Details</th>
-            </tr>
-        </thead>
-        <tbody>
+    <!-- Publication Entries -->
+    <div class="publication">
+        <div>
+            <img src="[Link to your image here]" alt="">
+        </div>
+        <div>
+            2024 Atangana Njock, P.G., Yin, Z.Y., Zhang, N., High-fidelity data augmentation for few-shot learning in jet grout injection applications, International Journal for Numerical and Analytical Methods in Geomechanics, doi:10.1002/nag.3862.<br>
+            Atangana Njock, P.G., Shen, S.L., Zhou, A.N., Yin, Z.Y., Zeng, Y., Harnessing Fuzzy Logic for Building Structural Health during Large Diameter Tunnelling in Urban Area, Engineering Applications of Artificial Intelligence, doi: 10.1016/j.engappai.2024.108519.
+        </div>
+    </div>
 
-            <!-- 2024 Publications -->
-            <tr>
-                <td rowspan="2">2024</td>
-                <td><img class="img-responsive" src="[Provide image link here]" alt=""></td>
-                <td>Atangana Njock, P.G., Yin, Z.Y., Zhang, N., High-fidelity data augmentation for few-shot learning in jet grout injection applications, International Journal for Numerical and Analytical Methods in Geomechanics, doi:10.1002/nag.3862.</td>
-            </tr>
-            <tr>
-                <td><img class="img-responsive" src="[Provide image link here]" alt=""></td>
-                <td>Atangana Njock, P.G., Shen, S.L., Zhou, A.N., Yin, Z.Y., Zeng, Y., Harnessing Fuzzy Logic for Building Structural Health during Large Diameter Tunnelling in Urban Area, Engineering Applications of Artificial Intelligence, doi: 10.1016/j.engappai.2024.108519.</td>
-            </tr>
+    <div class="publication">
+        <div>
+            <img src="[Link to your image here]" alt="">
+        </div>
+        <div>
+            2023 Atangana Njock, P.G., Zhou, A.N., Z.Y. Yin, Shen, S.L., Integrated risk assessment approach for eutrophication in coastal waters: Case of Baltic Sea, Journal of Cleaner Production, doi: 10.1016/j.jclepro.2022.135673.<br>
+            Atangana Njock, P.G., Shen, S.L., Zhou, A.N., Characterization of likelihood of gas hydrates occurrence in South China Sea based on Bonferroni mean-based TOPSIS and Fuzzy Set Theory, Geoscience Frontiers, doi: 10.1016/j.gsf.2022.101513.
+        </div>
+    </div>
 
-            <!-- 2023 Publications -->
-            <tr>
-                <td rowspan="3">2023</td>
-                <td><img class="img-responsive" src="[Provide image link here]" alt=""></td>
-                <td>Atangana Njock, P.G., Zhou, A.N., Z.Y. Yin, Shen, S.L., Integrated risk assessment approach for eutrophication in coastal waters: Case of Baltic Sea, Journal of Cleaner Production, doi: 10.1016/j.jclepro.2022.135673.</td>
-            </tr>
-            <tr>
-                <td><img class="img-responsive" src="[Provide image link here]" alt=""></td>
-                <td>Atangana Njock, P.G., Shen, S.L., Zhou, A.N., Characterization of likelihood of gas hydrates occurrence in South China Sea based on Bonferroni mean-based TOPSIS and Fuzzy Set Theory, Geoscience Frontiers, doi: 10.1016/j.gsf.2022.101513.</td>
-            </tr>
-            <tr>
-                <td><img class="img-responsive" src="[Provide image link here]" alt=""></td>
-                <td>Zeng, Y., Atangana Njock, P.G., Xiong W., Zhang, X.L., Shen, S.L., Risk analysis of large diameter slurry shield tunneling in urban area, Underground Space, doi: 10.1016/j.undsp.2023.05.001.</td>
-            </tr>
+    <div class="publication">
+        <div>
+            <img src="[Link to your image here]" alt="">
+        </div>
+        <div>
+            2023 Zeng, Y., Atangana Njock, P.G., Xiong W., Zhang, X.L., Shen, S.L., Risk analysis of large diameter slurry shield tunneling in urban area, Underground Space, doi: 10.1016/j.undsp.2023.05.001.<br>
+            Shen, S.L., Atangana Njock, P.G.*, Zhou, A.N., Influence of nozzle structure on effectiveness of jet grouting operations and its optimal design, Journal of Petroleum Science and Engineering, doi: 10.1016/j.geoen.2023.211788.
+        </div>
+    </div>
 
-             <!-- More Publications from 2023 -->
-             <tr>
-                 <td rowspan="2">2023</td>
-                 <td><img class="img-responsive" src="[Provide image link here]" alt=""></td>
-                 <td>Shen, S.L., Atangana Njock, P.G.*, Zhou, A.N., Influence of nozzle structure on effectiveness of jet grouting operations and its optimal design, Journal of Petroleum Science and Engineering, doi: 10.1016/j.geoen.2023.211788.</td>
-             </tr>
+    <div class="publication">
+        <div>
+            <img src="[Link to your image here]" alt="">
+        </div>
+        <div>
+            2022 Atangana Njock, P.G., Shen, S.L., Zhou, A.N., Lin, S.S., A VIKOR-based approach to evaluate river contamination risks caused by wastewater treatment plant discharges,<br> Water Research,
+             doi: 10.1016/j.watres.2022.119288.
+         </div>
+     </div>
 
-             <!-- 2022 Publications -->
-             <tr>
-                 <td rowspan="2">2022</td>
-                 <td><img class="img-responsive" src="[Provide image link here]" alt=""></td>
-                 <td>Atangana Njock, P.G., Shen, S.L., Zhou, A.N., Lin, S.S., A VIKOR-based approach to evaluate river contamination risks caused by wastewater treatment plant discharges, Water Research, doi: 10.1016/j.watres.2022.119288.</td>
-             </tr>
+     <!-- Peer-reviewed Conference Proceedings Section -->
+     &nbsp;<br>&nbsp;<br>
 
-             <!-- Continue adding more publications similarly -->
+     <!-- Peer-reviewed Conference Proceedings Section -->
+     h4>Peer-reviewed Conference Proceedings</h4>
 
-         </tbody></table>
+     <!-- Conference Proceedings Entry -->
+     div class='publication'>
+         div
+             img src='[Link to your image here]' alt=''>
+         /div
+         div
+             2018 Atangana Njock P.G.; Shen S.; Investigation of Ground Displacement Induced by Hydraulic Jetting using Smoothed Particle Hydrodynamics,<br> Presented at the Proceedings of the GeoShanghai 2018 International Conference,
+              Shanghai China; May 4; pp68–75.
+         /div
+     /diV
 
-         <!-- Add space between sections -->
-         &nbsp;<br>&nbsp;<br>
+     <!-- Add space between sections -->
+     &nbsp;<br>&nbsp;<br>
 
-         <!-- Peer-reviewed Conference Proceedings Section -->
-         h4>Peer-reviewed Conference Proceedings</h4>
+     <!-- Editorial Section -->
+     h4>Editorial</h4>
 
-         <!-- Conference Proceedings Table -->
-         table
-             tbody
+     <!-- Editorial Entry -->
+     div class='publication'>
+         div
+             img src='[Link to your image here]' alt=''>
+         /div
+         div
+             2024 Atangana Njock P.G.; Shen S.; Writing impactful review paper in smart construction and sustainable cities,<br> Smart Construction and Sustainable Cities,
+              doi: 10.1007/s44268-024-00038-2.<br> 
+              Shen S.; Atangana Njock P.G.; Organizing and presenting original research article in Smart Construction and Sustainable Cities,<br> Smart Construction and Sustainable Cities,
+               doi: 10.1007/s44268-024-00039-1.
+         /div
+     /diV
 
-                 <!-- Conference Proceedings Entry -->
-                 tr
-                     div class='col-md-2'>
-                         img class='img-responsive' src='[Provide image link here]' alt=''>
-                     /div
+     <!-- Add space between sections -->
+     &nbsp;<br>&nbsp;<br>
 
-                     <!-- Add space between sections -->
-                     &nbsp;<br>&nbsp;<br>
+     <!-- Thesis Section -->
+     h4>Thesis</h4>
 
-                     <!-- Conference Details Entry -->
-                     2018 Atangana Njock P.G.; Shen S.; Investigation of Ground Displacement Induced by Hydraulic Jetting using Smoothed Particle Hydrodynamics,<br> Presented at the Proceedings of the GeoShanghai 2018 International Conference,
-                      Shanghai China; May 4; pp68–75.
-                 /tr
-
-             /tbody
-         /table
-
-         <!-- Add space between sections -->
-         &nbsp;<br>&nbsp;<br>
-
-         <!-- Editorial Section -->
-         h4>Editorial</h4>
-
-         <!-- Editorial Table -->
-         table
-             tbody
-
-             <!-- Editorial Entry -->
-             tr
-                 div class='col-md-2'>
-                     img class='img-responsive' src='[Provide image link here]' alt=''>
-                 /div
-                 div class='col-md-10'>
-                     2024 Atangana Njock P.G.; Shen S.; Writing impactful review paper in smart construction and sustainable cities,<br> Smart Construction and Sustainable Cities,
-                      doi: 10.1007/s44268-024-00038-2.<br> 
-                      Shen S.; Atangana Njock P.G.; Organizing and presenting original research article in Smart Construction and Sustainable Cities,<br> Smart Construction and Sustainable Cities,
-                       doi: 10.1007/s44268-024-00039-1.
-                 /div
-             /tr
-
-             /tbody
-         /table
-
-         <!-- Add space between sections -->
-         &nbsp;<br>&nbsp;<br>
-
-         <!-- Thesis Section -->
-         h4>Thesis</h4>
-
-         <!-- Thesis Table -->
-         table
-             tbody
-
-             <!-- Thesis Entry -->
-             tr
-                 div class='col-md-2'>
-                     img class='img-responsive' src='[Provide image link here]' alt=''>
-                 /div
-                 div class='col-md-10'>
-                     2021 Atangana Njock P.G.; Investigation of Performance and Effects of Jet Grouting Operations using Numerical and AI Technologies,<br> Shanghai Jiao Tong University Ph.D Thesis; Dissertation Advisor:
-                      Prof Shui Long Shen (Member of the European Academy of Sciences and Arts).
-                 /div
-             /tr
-
-         /tbody
-     /table
+     <!-- Thesis Entry -->
+     div class='publication'>
+         div
+             img src='[Link to your image here]' alt=''>
+         /div
+         div
+             2021 Atangana Njock P.G.; Investigation of Performance and Effects of Jet Grouting Operations using Numerical and AI Technologies,<br> Shanghai Jiao Tong University Ph.D Thesis; Dissertation Advisor:
+              Prof Shui Long Shen (Member of the European Academy of Sciences and Arts).
+         /div
+     /diV
 
  /diV><!-- /.container -->
 
