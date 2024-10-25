@@ -13,24 +13,43 @@
 
     <style>
         body {
-            padding-top: 70px; /* Adjust padding to avoid overlap with fixed navbar */
+            padding-top: 70px;
         }
         h1, h4 {
-            margin-top: 30px; /* Space above section headers */
+            margin-top: 30px;
         }
-        .bio-img, .profile-img, .personal-dev-img, .art-img, .reading-img, .sports-img {
-            max-width: 150px; /* Set a fixed width for images */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 50%; /* Make the image circular */
-            margin-bottom: 20px; /* Space below the image */
+        .section {
+            display: flex;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+        .section.left {
+            flex-direction: row;
+        }
+        .section.right {
+            flex-direction: row-reverse;
+        }
+        .section-content {
+            max-width: 500px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f8f9fa; /* Light background for boxes */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .section img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin: 15px;
         }
         .mosaic {
             display: flex;
             gap: 10px;
+            flex-wrap: wrap;
         }
         .mosaic img {
-            max-width: 100px; /* Set a fixed width for mosaic images */
-            height: auto; /* Maintain aspect ratio */
+            max-width: 100px;
+            height: auto;
         }
     </style>
 </head>
@@ -64,41 +83,73 @@
 <div class="container">
     <h1>About Me</h1>
 
-    <h4>Bio</h4>
-    <p>I have always been driven by a passion for building and creating. Ever since I was a child, I found joy in constructing things. At the age of seven, I built my first house using palm branches for walls and roof, and bamboo raffia as structural elements. This early experience ignited a lifelong fascination with engineering and design.</p>
-    <p>As a researcher and engineer, I am motivated by the positive impact my work can have on the lives of others. I believe in the power of innovation to create solutions that improve our communities and environments. My guiding motto is simple: respect everyone and cultivate love for myself and others. This philosophy fuels my dedication to my vocation.</p>
-
-    <h4>Profile</h4>
-    <p>I am a proud Associate Fellow of the Higher Education Academy (AFHEA), committed to enhancing the learning experience of my students. My professional journey has been enriched by various experiences, including teaching and research that prioritize student engagement and success.</p>
-    <img src="[Profile Image Placeholder]" alt="Profile Image" class="profile-img">
-
-    <h4>Personal Development</h4>
-    <p>I am passionate about personal and professional growth, participating in events such as the "Supporting Emotionally Unstable Students" workshop and the "Excellent Teachers on Teaching Excellence" Symposium 2024. Additionally, I attended the Education and Student Development Salon on "How to Make the Best Choice in Life?" and have undergone specialized training in university teaching methods.</p>
-    <img src="[Personal Development Photo Placeholder]" alt="Personal Development" class="personal-dev-img">
-
-    <h4>Art</h4>
-    <p>Art inspires me in many forms—music, dance, painting, and more. I enjoy creating art myself, and recently, I’ve explored generative AI to produce unique pieces. Here are some of my latest creations:</p>
-    <div class="mosaic">
-        <img src="[Art Image 1 Placeholder]" alt="Art Image 1" class="art-img">
-        <img src="[Art Image 2 Placeholder]" alt="Art Image 2" class="art-img">
-        <img src="[Art Image 3 Placeholder]" alt="Art Image 3" class="art-img">
+    <div class="section left">
+        <img src="[Profile Image Placeholder]" alt="Profile Image">
+        <div class="section-content">
+            <h4>Bio</h4>
+            <p>I have always been driven by a passion for building and creating. Ever since I was a child, I found joy in constructing things. At the age of seven, I built my first house using palm branches for walls and roof, and bamboo raffia as structural elements. This early experience ignited a lifelong fascination with engineering and design.</p>
+            <p>As a researcher and engineer, I am motivated by the positive impact my work can have on the lives of others. I believe in the power of innovation to create solutions that improve our communities and environments. My guiding motto is simple: respect everyone and cultivate love for myself and others. This philosophy fuels my dedication to my vocation.</p>
+        </div>
     </div>
 
-    <h4>Reading</h4>
-    <p>I have a deep interest in psychology and often immerse myself in literature on the subject. Here are three books that I highly recommend for anyone looking to expand their understanding of human behavior:</p>
-    <div class="mosaic">
-        <img src="[Reading Image 1 Placeholder]" alt="Reading Image 1" class="reading-img">
-        <img src="[Reading Image 2 Placeholder]" alt="Reading Image 2" class="reading-img">
-        <img src="[Reading Image 3 Placeholder]" alt="Reading Image 3" class="reading-img">
+    <div class="section right">
+        <div class="section-content">
+            <h4>Profile</h4>
+            <p>I am a proud Associate Fellow of the Higher Education Academy (AFHEA), committed to enhancing the learning experience of my students. My professional journey has been enriched by various experiences, including teaching and research that prioritize student engagement and success.</p>
+        </div>
+        <img src="[Profile Image Placeholder]" alt="Profile Image">
     </div>
 
-    <h4>Music</h4>
-    <p>Music is at the core of who I am. In another life, I might have been on a world tour sharing my passion. Although I express my musicality at conferences, I still cherish moments of performance. Enjoy this audio clip of one of my performances:</p>
-    <video controls src="[Music Video Placeholder]"></video>
+    <div class="section left">
+        <img src="[Personal Development Photo Placeholder]" alt="Personal Development">
+        <div class="section-content">
+            <h4>Personal Development</h4>
+            <p>I am passionate about personal and professional growth, participating in events such as the "Supporting Emotionally Unstable Students" workshop and the "Excellent Teachers on Teaching Excellence" Symposium 2024. Additionally, I attended the Education and Student Development Salon on "How to Make the Best Choice in Life?" and have undergone specialized training in university teaching methods.</p>
+        </div>
+    </div>
 
-    <h4>Sports</h4>
-    <p>Sports play a significant role in my life. I particularly enjoy football and Taekwondo. While I may not be as renowned as Francis Ngannou, these activities help me unwind and stay active.</p>
-    <img src="[Sports Image Placeholder]" alt="Sports" class="sports-img">
+    <div class="section right">
+        <div class="section-content">
+            <h4>Art</h4>
+            <p>Art inspires me in many forms—music, dance, painting, and more. I enjoy creating art myself, and recently, I’ve explored generative AI to produce unique pieces. Here are some of my latest creations:</p>
+            <div class="mosaic">
+                <img src="[Art Image 1 Placeholder]" alt="Art Image 1">
+                <img src="[Art Image 2 Placeholder]" alt="Art Image 2">
+                <img src="[Art Image 3 Placeholder]" alt="Art Image 3">
+            </div>
+        </div>
+        <img src="[Art Image Placeholder]" alt="Art" class="art-img">
+    </div>
+
+    <div class="section left">
+        <img src="[Reading Image 1 Placeholder]" alt="Reading Image 1">
+        <div class="section-content">
+            <h4>Reading</h4>
+            <p>I have a deep interest in psychology and often immerse myself in literature on the subject. Here are three books that I highly recommend for anyone looking to expand their understanding of human behavior:</p>
+            <div class="mosaic">
+                <img src="[Reading Image 1 Placeholder]" alt="Reading Image 1">
+                <img src="[Reading Image 2 Placeholder]" alt="Reading Image 2">
+                <img src="[Reading Image 3 Placeholder]" alt="Reading Image 3">
+            </div>
+        </div>
+    </div>
+
+    <div class="section right">
+        <div class="section-content">
+            <h4>Music</h4>
+            <p>Music is at the core of who I am. In another life, I might have been on a world tour sharing my passion. Although I express my musicality at conferences, I still cherish moments of performance. Enjoy this audio clip of one of my performances:</p>
+            <video controls src="[Music Video Placeholder]"></video>
+        </div>
+        <img src="[Music Image Placeholder]" alt="Music" class="music-img">
+    </div>
+
+    <div class="section left">
+        <img src="[Sports Image Placeholder]" alt="Sports">
+        <div class="section-content">
+            <h4>Sports</h4>
+            <p>Sports play a significant role in my life. I particularly enjoy football and Taekwondo. While I may not be as renowned as Francis Ngannou, these activities help me unwind and stay active.</p>
+        </div>
+    </div>
 </div><!-- /.container -->
 
 <!-- JavaScript -->
