@@ -11,45 +11,83 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
-    <style>
-        .portfolio-item {
-            max-width: 100%; /* Ensure images are responsive */
-            height: auto; /* Maintain aspect ratio */
-        }
-        .podcast-section {
-            margin-bottom: 30px; /* Increased space between sections */
-        }
-        .highlight {
-            font-weight: bold;
-            font-style: italic;
-            font-size: 1.5em;
-        }
-        body {
-            padding-top: 70px; /* Adjust padding to avoid overlap with fixed navbar */
-        }
-        .subscribe-button {
-            background-color: #A9A9A9; /* Bootstrap primary color */
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            text-align: center;
-            display: inline-block;
-            margin-top: 20px;
-            text-decoration: none; /* Remove underline */
-        }
-        .subscribe-button:hover {
-            background-color: #7D7D7D; /* Darker shade on hover */
-        }
-        .attention {
-            font-weight: bold;
-            color: #ff6600; /* Attention color */
-            margin-top: 15px;
-        }
-        p {
-            text-align: justify; /* Justify the paragraphs */
-        }
-    </style>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif; /* Modern font */
+        line-height: 1.6; /* Improved readability */
+        background-color: #f8f9fa; /* Light background color */
+        padding-top: 70px; /* Avoid overlap with fixed navbar */
+    }
+    h1, h2, h3, h4 {
+        color: #343a40; /* Darker text for headings */
+    }
+    .podcast-section {
+        margin-top: 20px; /* Space above sections */
+        background-color: #ffffff; /* White background for sections */
+        padding: 15px; /* Padding for sections */
+        border-radius: 5px; /* Slightly rounded corners */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+    }
+    .subscribe-button {
+        background-color: #007bff; /* Bootstrap primary color */
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        display: inline-block;
+        margin-top: 20px;
+        text-decoration: none; /* Remove underline */
+        transition: background-color 0.3s; /* Smooth transition */
+    }
+    .subscribe-button:hover {
+        background-color: #0056b3; /* Darker shade on hover */
+    }
+    .attention {
+        font-weight: bold;
+        color: #ff6600; /* Attention color */
+        margin-top: 15px;
+        font-size: 1.2em; /* Slightly larger text */
+    }
+    p {
+        text-align: justify; /* Justify the paragraphs */
+    }
+    ul {
+        list-style-type: none; /* Remove default list styling */
+        padding-left: 0; /* Remove default padding */
+    }
+    ul li {
+        margin-bottom: 5px; /* Space between list items */
+    }
+    ul li::before {
+        content: '✔️'; /* Add check mark before list items */
+        margin-right: 5px; /* Space between icon and text */
+    }
+    footer {
+        background-color: #343a40; /* Dark background */
+        color: white;
+        padding: 15px;
+        text-align: center; /* Center text in footer */
+    }
+    footer a {
+        color: #ffc107; /* Accent color for links */
+        text-decoration: none; /* Remove underline */
+    }
+    footer a:hover {
+        text-decoration: underline; /* Underline on hover */
+    }
+    footer h4 {
+        margin-bottom: 10px; /* Add space below the heading */
+    }
+    .copyright {
+        font-size: 0.7em; /* Slightly smaller font size */
+        margin-top: 20px; /* Increased spacing above copyright */
+    }
+    hr {
+        border-top: 1px solid #e9ecef; /* Light separator */
+        margin: 20px 0; /* Space above and below the line */
+    }
+</style>
 </head>
 
 <body>
@@ -110,7 +148,12 @@
         <div class="attention">✨Join us now to stay updated on our latest episodes and embark on this exciting journey of exploration and discovery!</div>
 
         <!-- Subscribe Button -->
-        <a href="https://www.youtube.com/playlist?list=PLCGakkNvsok_2muRugepzbqMG6S7CxBr0" target="_blank" class="subscribe-button">Listen on YouTube</a>
+        <a href="https://podcasts.apple.com/podcast/the-einstein-podcast/id1776470564" target="_blank" class="subscribe-button">Listen on Apple Podcast</a>
+        
+        <!-- LinkedIn Subscribe Button -->
+        <a href="https://open.spotify.com/show/6oHGnHYqJQp8xKflQbV3bt" target="_blank" class="subscribe-button">Listen on Spotify</a>
+        <!-- Subscribe Button -->
+        <a href="https://youtube.com/playlist?list=PLCGakkNvsok_2muRugepzbqMG6S7CxBr0&si=4atzta9aPMhTOyhg" target="_blank" class="subscribe-button">Listen on YouTube</a>
         
         <!-- LinkedIn Subscribe Button -->
         <a href="https://www.linkedin.com/in/pierre-guy-a-njock-13ab4729b/" target="_blank" class="subscribe-button">Listen on LinkedIn</a>
